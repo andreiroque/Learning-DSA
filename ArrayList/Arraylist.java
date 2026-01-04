@@ -30,6 +30,15 @@ public class Arraylist{
     for(int i = 0; i < nums.size(); i++){
       System.out.print(nums.get(i) + " ");
     }
+
+    int targetValue = 4;
+    delFromArrayList(targetValue, nums);
+
+    System.out.print("\nUpdated: ");
+    // Another way of looping through an ArrayList
+    for(int num : nums){
+      System.out.print(num + " ");
+    }
   }
 
 }
