@@ -6,7 +6,10 @@ public class Arraylist{
 
     ArrayList<Integer> nums = new ArrayList<>();
 
-    
+    // Insertion:
+    nums.add(2);
+    nums.add(4);
+    nums.add(3);
   }
 
 }
