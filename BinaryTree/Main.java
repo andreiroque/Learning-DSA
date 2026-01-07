@@ -1,5 +1,14 @@
 public class Main{
 
+  public static int findHeight(BTNode root){
+    if(root == null) return -1;
+
+    int leftHeight = findHeight(root.left);
+    int rightHeight = findHeight(root.right);
+
+    return Math.max(leftHeight, rightHeight) + 1;
+  }
+
   public static void main(String[] args){
 
     BTNode root = new BTNode(5);
