@@ -59,6 +59,20 @@ public class Main{
     return ans;
   }
 
+  // Function to print a 2D matrix
+  public static void print2DArray(List<List<String>> arr){
+    for(List<String> row : arr){
+      for(String cell : row){
+        if(cell.isEmpty()){
+          System.out.print(" ");
+        }else{
+          System.out.print(cell);
+        }
+      }
+      System.out.println();
+    }
+  }
+
   public static void main(String[] args){
 
     BTNode root = new BTNode(5);
@@ -69,6 +83,10 @@ public class Main{
     root.insert(new BTNode(8));
     root.insert(new BTNode(7));
     root.insert(new BTNode(9));
+
+    List<List<String>> result = treeToMatrix(root);
+
+    print2DArray(result);
 
   }
 
